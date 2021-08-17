@@ -80,7 +80,7 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
+/*.bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -93,7 +93,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}
+}*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -286,7 +286,7 @@ a:hover {
 #bloc-1-hero h1 {
     font-size: 32px;
 }
-
+/* Entête navigation */
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -295,7 +295,7 @@ a:hover {
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
-    font-size: 25px;
+    font-size: 20px; /* font-size 25 px remplacé par 20px*/
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
@@ -335,6 +335,9 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+}
+.nav > li a:hover{
+    font-weight: 600;
 }
 
 .navbar-toggle {
@@ -677,7 +680,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
@@ -742,7 +745,12 @@ h4 {
 .portfolio-thumb {
     margin-bottom: 24px;
 }
-
+/* taille image */
+img.img-responsive.portfolio-thumb {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
@@ -753,7 +761,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -767,7 +775,8 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    /*background-color: #364577;*/
+    background-color: #000;
 }
 
 .bgc-atomic-tangerine {
@@ -775,7 +784,8 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    /*color: #F3976C!important;*/
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -819,6 +829,7 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
+    /*background:#000;*/
 }
 
 .bg-presentation {
@@ -1039,4 +1050,23 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+@media (min-width: 768px){
+    .col-sm-4 {
+        width: 100%;
+    }
+}
+.partenaires{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.navigation{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
 }
