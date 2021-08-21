@@ -80,7 +80,7 @@ a:hover {
     background: top no-repeat;
 }
 
-/*.bloc-bg-texture::before {
+.bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -93,7 +93,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}*/
+}
 
 .b-parallax {
     background-attachment: fixed;
@@ -232,6 +232,7 @@ a:hover {
 .l-bloc h6 a,
 .l-bloc p a {
     color: rgba(0, 0, 0, .6);
+    font-weight: 600; /* Ajout font-weight */
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -295,10 +296,13 @@ a:hover {
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
-    font-size: 20px; /* font-size 25 px remplacé par 20px*/
+    font-size: 25px; /* font-size 25 px remplacé par 20px*/
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
+    /* Ajout flex */
+    display: flex;
+    align-items: center;
 }
 
 .navbar-brand img {
@@ -335,10 +339,11 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    background: 0 0;
 }
-.nav > li a:hover{
-    font-weight: 600;
-}
+/*.nav > li a:hover{
+    font-weight: 500;
+}*/
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
@@ -545,7 +550,7 @@ a[data-lightbox]:hover::before {
     font-size: 32px;
     width: 50px;
     height: 50px;
-    margin-left: -25px;
+    margin-left: -20px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
@@ -553,7 +558,7 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%,-50%);
     -webkit-transform: translateY(-50%);
 }
 
@@ -705,6 +710,9 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    /* Ajout display flex */
+    display: flex;
+    justify-content: space-evenly;
 }
 
 h2 {
@@ -784,8 +792,8 @@ img.img-responsive.portfolio-thumb {
 }
 
 .tc-white {
-    /*color: #F3976C!important;*/
-    color: #FFF!important;
+    color: #F3976C!important;
+    /*color: #FFF!important;*/
 }
 
 .btn-atomic-tangerine {
@@ -833,7 +841,7 @@ img.img-responsive.portfolio-thumb {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1056,17 +1064,55 @@ img.img-responsive.portfolio-thumb {
         width: 33.33333333%;
     }
 }
-.partenaires{
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    margin-top: 20px;
+
+/* logo la chouette agence */
+.navbar-brand > h1{
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Podkova', serif;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    transition: all .200ms ease-out;
 }
-.navigation{
-    list-style-type: none;
+.navbar-brand > h1:hover{
+    font-weight: 700;
+}
+
+.partner{
+    max-width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.navigation-footer{
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     padding-left: 0;
 }
+.navigation-footer > li{
+    margin-right: 10px;
+}
+.navigation-footer li a{
+    font-size: 18px;
+    font-weight: 500;
+}
+.navigation-footer li a::after,.site-navigation li a::after{
+    content: "";
+    width: 0px;
+    border-radius: 2px;
+    background: #fff;;
+    display: block;
+    margin: 5px auto 0 auto;
+    height: 2px;
+    transition: width .200ms ease-out;
+}
+.site-navigation li a::after{
+    background: #000;
+}
+.navigation-footer li a:hover::after,.site-navigation li a:hover::after{
+    width: 100%;
+}
+
+
