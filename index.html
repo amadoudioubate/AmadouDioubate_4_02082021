@@ -3,16 +3,23 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<title>La chouette agence | Entreprise web design à Lyon</title>
+		<title>La chouette agence | Entreprise de web design à Lyon</title>
 		<!-- meta keywords est obsolète donc on supprime 
 		<meta name="keywords" content="">-->
-		<!-- Ajout du contenu content -->
+		<!-- Indexation and crawling-->
+		<meta name="robots" content="index, follow">
+		<meta name="googlebot" content="index, follow">
+		<!-- Indexation and crawling END -->
+		<!-- Add content description -->
 		<meta name="description" content="La chouette agence est une agence de web design qui aide les entreprises de la région lyonnaise à devenir attractives et visibles sur Internet">
+		<!-- description END -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-		<!-- Ajout de meta http-equiv.... -->
+		<!-- Add de meta http-equiv.... -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!-- Modificaton de type jpg en png -->
+		<!-- END -->
+		<!-- Conversion du type favicon jpg en png -->
 		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<!-- END -->
 		
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -68,14 +75,14 @@
 			</header>
 			<!-- En-tête bloc-0 END -->
 
-			<!-- Contenu principal du site -->
+			<!-- Contenu principal de la page-->
 			<main>
 				<!-- Section bloc-1-presentation -->
 				<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
 					<div class="container bloc-lg">
 						<div class="row tight-width-whitespace">
 							<div class="col-sm-12">
-								<img src="img/la-chouette-agence-banniere.png" class="center-block image-resize-mode" width="100" height="100" alt="Le logo de la chouette agence en forme chouette cercle noir" />
+								<img src="img/la-chouette-agence-cercle-noir.png" class="center-block image-resize-mode" width="100" height="100" alt="Le logo de la chouette agence en forme chouette cercle noir" />
 								<h2 class="text-center hero-bloc-text tc-white ">
 									La chouette agence est une agence de web design basée à Lyon
 								</h2>
@@ -182,7 +189,7 @@
 						<div class="row tight-width-whitespace portfolio-row">
 							<div class="col-sm-6">
 								<a href="#" data-lightbox="img/journal.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
-									<img src="img/journal.jpg" alt="Refonte d'un site web pour un journal de la région lyonnaise" class="img-responsive portfolio-thumb" />
+									<img src="img/journal-site-web.jpg" alt="Refonte d'un site web pour un journal de la région lyonnaise" class="img-responsive portfolio-thumb" />
 								</a>
 								<h3 class="mg-md text-center">
 									Refonte d'un site web pour un journal local
@@ -193,7 +200,7 @@
 							</div>
 							<div class="col-sm-6">
 								<a href="#" data-lightbox="img/photographe.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
-									<img src="img/photographe.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour photographes" />
+									<img src="img/photographe-site-web.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour photographes" />
 								</a>
 								<h3 class="mg-md text-center">
 									Création d'un site web pour photographes
@@ -206,7 +213,7 @@
 						<div class="row tight-width-whitespace portfolio-row">
 							<div class="col-sm-6">
 								<a href="#" data-lightbox="img/voyage.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
-									<img src="img/voyage.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour voyageur"/>
+									<img src="img/voyage-site-web.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour voyageur"/>
 								</a>
 								<h3 class="mg-md text-center">
 									Création d'un site internet pour un voyageur
@@ -217,7 +224,7 @@
 							</div>
 							<div class="col-sm-6">
 								<a href="#" data-lightbox="img/mariage.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
-									<img src="img/mariage.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour agence de mariage" />
+									<img src="img/mariage-site-web.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour agence de mariage" />
 								</a>
 								<h3 class="mg-md text-center">
 									Conception d'un site pour une agence de mariage
@@ -249,7 +256,7 @@
 				<!-- Section bloc-5-cta END -->
 			</main>
 			<!-- Contenu principal END -->
-			
+
 			<!-- ScrollToTop Button -->
 			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 			<!-- ScrollToTop Button END-->
@@ -285,9 +292,10 @@
 								</div>
 							<!--<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>-->
 							</div>
+							<!-- Social networks END -->
+							<!-- Partner site -->
 							<div class="row">
 								<div class="col-sm-12">
-		
 									<strong class="partner text-center">Partenaires</strong>
 									<ul class="navigation-footer">
 										<li><a href="https://www.lyon.fr/" target="_blank">Ville de Lyon</a></li>
@@ -296,6 +304,7 @@
 									</ul>	
 								</div>
 							</div>
+							<!-- Partner site END-->
 						</div>
 					</div>
 				</div>

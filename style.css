@@ -40,8 +40,8 @@ a:hover {
 }
 
 .bloc .container {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px; /* c'etait à 0 ,j'ai mis à 20px */
+    padding-right: 20px; /* c'etait à 0 ,j'ai mis à 20px */
 }
 
 .bloc-lg {
@@ -89,9 +89,10 @@ a:hover {
     left: 0;
     right: 0;
 }
-
+/* à supprimer dans l'ensemble*/
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    /* supprimer url texture-paper */
+    /*background: url("img/texture-paper.png");*/
     background-size: 280px 280px;
 }
 
@@ -1114,5 +1115,10 @@ img.img-responsive.portfolio-thumb {
 .navigation-footer li a:hover::after,.site-navigation li a:hover::after{
     width: 100%;
 }
+
+address{
+    padding-left: 5px;
+}
+
 
 
