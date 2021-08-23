@@ -296,7 +296,7 @@ a:hover {
 
 .navbar-brand {
     height: auto;
-    padding: 3px 15px;
+    padding: 0px 15px; /* 3px changé en 0 px */
     font-size: 25px; /* font-size 25 px remplacé par 20px*/
     font-weight: normal;
     font-weight: 600;
@@ -342,12 +342,10 @@ a:hover {
     background: transparent;
     background: 0 0;
 }
-/*.nav > li a:hover{
-    font-weight: 500;
-}*/
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
+    margin: 8px 10px 0 0;
+    padding: 8px 10px; /* padding ajouté */
     border: 0px;
 }
 
@@ -770,7 +768,8 @@ img.img-responsive.portfolio-thumb {
 }
 
 .black-background {
-    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    background-color: rgba(84,84,84,0.5);
     padding: 40px 40px 40px 40px;
 }
 
@@ -783,18 +782,19 @@ img.img-responsive.portfolio-thumb {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
+/*.bgc-dark-slate-blue {
     /*background-color: #364577;*/
-    background-color: #000;
+/*    background-color: #000;
 }
-
+*/
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    /*color: #F3976C!important;*/
     /*color: #FFF!important;*/
+    color: #F8F8FF!important;
 }
 
 .btn-atomic-tangerine {
@@ -1068,13 +1068,22 @@ img.img-responsive.portfolio-thumb {
 
 /* logo la chouette agence */
 .navbar-brand > h1{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     font-family: 'Podkova', serif;
     padding-left: 0!important;
     padding-right: 0!important;
     transition: all .200ms ease-out;
 }
+@media (min-width: 768px) {
+    .navbar-brand > h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
 .navbar-brand > h1:hover{
     font-weight: 700;
 }
@@ -1084,7 +1093,7 @@ img.img-responsive.portfolio-thumb {
     display: block;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .navigation-footer{
     list-style: none;
@@ -1098,6 +1107,7 @@ img.img-responsive.portfolio-thumb {
 .navigation-footer li a{
     font-size: 18px;
     font-weight: 500;
+    color: #341E1E!important;
 }
 .navigation-footer li a::after,.site-navigation li a::after{
     content: "";
@@ -1120,5 +1130,11 @@ address{
     padding-left: 5px;
 }
 
+label{
+    font-weight: bold;
+}
 
+blockquote > strong{
+    font-style: italic;
+}
 
