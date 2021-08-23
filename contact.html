@@ -91,20 +91,20 @@
 				<!-- Section bloc-6 END -->
 
 				<!-- Section formulaire bloc-7 -->
-				<sectin class="bloc bgc-white l-bloc" id="bloc-7">
+				<sectin class="bloc bgc-white l-bloc" id="bloc-7" novalidate>
 					<div class="container bloc-lg">
 						<div class="row">
 							<div class="col-sm-6">
 								<form id="form_1" method="POST">
 									<div class="form-group">
 										<!-- Ajout for dans label-->
-										<label for="name">Nom*</label>
-										<input id="name" class="form-control" placeholder="Saisissez votre nom (obligatoire)" required />
+										<label for="name">Nom</label>
+										<input id="name" class="form-control" placeholder="Nom et Prénom" required />
 									</div>
 									<div class="form-group">
 										<!-- Ajout for dans label-->
-										<label for="email">Adresse e-mail*</label>
-										<input id="email" class="form-control" type="email" placeholder="Saisissez votre adresse mail (obligatoire)" required />
+										<label for="email">Adresse e-mail</label>
+										<input id="email" class="form-control" type="email" placeholder="Email" required />
 									</div>
 									<div class="form-group">
 										<!-- Ajout for dans label-->
@@ -121,18 +121,28 @@
 									<div class="form-group">
 										<!-- Ajout for dans label-->
 										<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
-										<textarea id="message" class="form-control" rows="4" cols="50" placeholder="Votre message (obligatoire)" required></textarea>
+										<textarea id="message" class="form-control" rows="4" cols="50" placeholder="Parlez-nous de votre projet" required></textarea>
 									</div> 
 									<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 										Envoyer
 									</button>
 								</form>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-6 text-center">
+								<h2 class="tc-orange text-uppercase">La Choute Agence</h2>
 								<!--Remplacement de p par adresse-->
 								<address>
-									contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+									<strong>Adresse</strong><br>
+									2 place Sathonay<br>69001 Lyon
 								</address>
+								<p>
+									<strong>Mail</strong><br>
+									contact@lachouetteagence.com
+								</p>
+								<p>
+									<strong>Horaires d'ouverture</strong><br>
+									Ouvert de 9h à 18h, du lundi au vendredi
+								</p>
 							</div>
 						</div>
 					</div>
