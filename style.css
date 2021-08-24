@@ -831,18 +831,28 @@ img.img-responsive.portfolio-thumb {
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
 }*/
+@media (min-width:768px){
+    .bg-banniere{
+        background-image: url("img/la-chouette-agence-banniere.jpg");
+    }
+    .bg-presentation{
+        background-image: url("img/presentation-chouette-agence.jpg");
+    }
+
+}
 
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
-    /*background:#000;*/
+    /*background-image: none;*/
+    background-color:#333;
 }
 
 .bg-presentation {
-    background-image: url("img/presentation-chouette-agence.jpg");
+    /*background-image: none;*/
+    background-color:#0fb684;
 }
 
 @media (max-width: 1024px) {
