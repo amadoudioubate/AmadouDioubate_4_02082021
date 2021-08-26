@@ -282,7 +282,6 @@ a[data-lightbox]:hover img {
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
-
 h1,h2,h3,h4,h5,h6,p,label,.btn,a {
     font-family: "helvetica";
     font-weight: 400;
@@ -424,17 +423,14 @@ img.img-responsive.portfolio-thumb {
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
 }
-
 .bg-banniere {
     /*background-image: none;*/
     background-color:#333;
 }
-
 .bg-presentation {
     /*background-image: none;*/
     background-color:#0fb684;
 }
-
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -448,7 +444,6 @@ img.img-responsive.portfolio-thumb {
         padding-right: 0;
     }
 }
-
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
@@ -469,7 +464,6 @@ img.img-responsive.portfolio-thumb {
         background-attachment: scroll;
     }
 }
-
 @media (max-width: 991px) {
     .container {
         width: 100%;
@@ -484,7 +478,6 @@ img.img-responsive.portfolio-thumb {
     }
    
 }
-
 @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
@@ -570,7 +563,6 @@ img.img-responsive.portfolio-thumb {
         width: 33.33333333%;
     }
 }
-
 /* logo la chouette agence */
 .navbar-brand > h1{
     font-size: 25px;
@@ -585,14 +577,9 @@ img.img-responsive.portfolio-thumb {
         font-size: 30px;
     }
 }
-
-
-
-
 .navbar-brand > h1:hover{
     font-weight: 700;
 }
-
 .partner{
     max-width: 100%;
     display: block;
@@ -643,15 +630,12 @@ address ~ p{
     padding: 0;
     margin-bottom: 20px;
 }
-
 label{
     font-weight: 600;
 }
-
 blockquote > strong{
     font-style: italic;
 }
-
 .tight-width-whitespace .col-sm-6{
     margin-bottom: 44px;
 }
