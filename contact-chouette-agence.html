@@ -3,28 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Contact - la chouette agence</title>
-		<!-- meta keywords est obsolète donc on supprime 
-		<meta name="keywords" content="">-->
-		<!-- Ajout du contenu content -->
 		<!-- Indexation and crawling-->
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow">
 		<!-- Indexation and crawling END -->
-		<meta name="description" content="Vous avez un projet de web design ?, nous sommes à votre écoute ! contactez-nous pour parler à notre agence web design.">
+		<meta name="description" content="Vous avez un projet de web design ? nous sommes à votre écoute ! contactez-nous pour parler à notre agence web design.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<!-- Ajout de meta http-equiv.... -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- Conversion favicon de type jpg en png -->
 		<link rel="shortcut icon" type="image/png" href="favicon.png">
 		
-		<!--<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">-->
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-		<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+		<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 		
 		<!-- Analytics -->
 		
@@ -40,8 +34,8 @@
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header">
-							<a class="navbar-brand" href="index.html" title="La page d'acceuil de la chouette agence">
-								<img src="img/la-chouette-agence-logo.png" alt="Le logo de la chouette agence" height="40" width="30" class="d-inline-block align-top" />
+							<a class="navbar-brand" href="index.html" title="La page d'acceuil">
+								<img src="img/logo-chouette-agence.png" alt="Le logo de la chouette agence" height="40" width="30" class="d-inline-block align-top" />
 								<h1>la chouette agence</h1>
 							</a>
 							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
@@ -57,7 +51,7 @@
 									<a href="index.html#bloc-4-portfolio">Nos réalisations</a>
 								</li>
 								<li>
-									<a href="contact.html">Contact</a>
+									<a href="contact-chouette-agence.html">Contact</a>
 								</li>
 							</ul>
 						</div>
@@ -93,7 +87,7 @@
 					<div class="container bloc-lg">
 						<div class="row">
 							<div class="col-sm-6">
-								<form id="form_1" method="POST" success-msg="Votre message a bien été envoyé." fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas, désolé pour le désagrément!" novalidate>
+								<form id="form_1" method="POST" novalidate>
 									<div class="form-group">
 										<!-- Ajout for dans label-->
 										<label for="name">Nom</label>
@@ -108,7 +102,7 @@
 										<!-- Ajout for dans label-->
 										<label for="input_504">Comment nous avez-vous connus ?</label>
 										<!--<input class="form-control" type="email" required id="input_504" />-->
-										<select class="form-control" required id="input_504">
+										<select class="form-control" required id="input_504" aria-labelledby="input_504">
 											<option selected>Bouche à oreille</option>
 											<option value="1">Réseaux sociaux</option>
 											<option value="2">Lien sur un autre site</option>
@@ -119,7 +113,7 @@
 									<div class="form-group">
 										<!-- Ajout for dans label-->
 										<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
-										<textarea id="message" class="form-control" rows="4" cols="50" placeholder="Parlez-nous de votre projet" required></textarea>
+										<textarea id="message" class="form-control" rows="4" cols="50" placeholder="Parlez-nous de votre projet..." required></textarea>
 									</div> 
 									<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 										Envoyer
@@ -193,9 +187,9 @@
 								<div class="col-sm-12">
 									<strong class="partner text-center">Nos partenaires :</strong>
 									<ul class="navigation-footer">
-										<li><a href="https://www.lyon.fr/" target="_blank">Ville de Lyon</a></li>
-										<li><a href="https://www.toybox-design.com/" target="_blank">ToyBoy</a></li>
-										<li><a href="https://www.matiere-1ere.fr/" target="blank">Matière</a></li>
+										<li><a href="https://www.lyon.fr/" target="_blank">Mairie de Lyon</a></li>
+										<li><a href="https://www.toybox-design.com/" target="_blank" title="ToyBoy est une agence webdesign à Lyon">ToyBoy</a></li>
+										<li><a href="https://www.matiere-1ere.fr/" target="blank" title="Matière première est une agence web et print à Lyon">Matière-1ere</a></li>
 									</ul>	
 								</div>
 							</div>
@@ -213,8 +207,6 @@
 		<script src="./js/jquery-2.1.0.min.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
 		<script src="./js/blocs.min.js"></script>
-		<script src="./js/jquery.touchSwipe.min.js" defer></script>
-		<script src="./js/gmaps.min.js"></script>
 		<script src="./js/jqBootstrapValidation.min.js"></script>
 		<script src="./js/formHandler.min.js"></script>
 	</body>

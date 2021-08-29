@@ -323,7 +323,7 @@ h2 {
     font-size: 22px;
     line-height: 1.4em;
 }
-h3 {
+h3,figcaption {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
@@ -377,6 +377,7 @@ img.img-responsive.portfolio-thumb {
 }
 .bgc-atomic-tangerine {
     background-color: #F3976C;
+    /*background-color: #c27956;*/
 }
 .tc-white {
     /*color: #F3976C!important;*/
@@ -413,7 +414,7 @@ img.img-responsive.portfolio-thumb {
 }*/
 @media (min-width:768px){
     .bg-banniere{
-        background-image: url("img/la-chouette-agence-maquette-site-web.jpg");
+        background-image: url("img/chouette-agence-banniere.jpg");
     }
     .bg-presentation{
         background-image: url("img/presentation-chouette-agence.jpg");
@@ -605,7 +606,6 @@ img.img-responsive.portfolio-thumb {
     content: "";
     width: 0px;
     border-radius: 2px;
-    background: #fff;;
     display: block;
     margin: 5px auto 0 auto;
     height: 2px;
@@ -613,6 +613,9 @@ img.img-responsive.portfolio-thumb {
 }
 .site-navigation li a::after{
     background: #000;
+}
+.navigation-footer li a::after{
+    background: #fff;;
 }
 .navigation-footer li a:hover::after,.site-navigation li a:hover::after{
     width: 100%;
