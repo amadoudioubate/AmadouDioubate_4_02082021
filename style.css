@@ -237,7 +237,7 @@ button {
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 20px;
+    bottom: 110px;
     right: 20px;
     opacity: 0;
     z-index: 500;
@@ -414,6 +414,10 @@ img.img-responsive.portfolio-thumb {
     .bg-presentation{
         background-image: url("img/presentation-chouette-agence.jpg");
     }
+    #bloc-8 .navbar{
+        border-top: 0px!important;
+        border-bottom: 0px!important;
+    }
 
 }
 .bg-lines-h2-bg {
@@ -576,7 +580,7 @@ img.img-responsive.portfolio-thumb {
 .navbar-brand > h1:hover{
     font-weight: 700;
 }
-.partner{
+/*.partner{
     max-width: 100%;
     display: block;
     margin-top: 20px;
@@ -596,8 +600,8 @@ img.img-responsive.portfolio-thumb {
     font-size: 18px;
     font-weight: 500;
     color: #341E1E!important;
-}
-.navigation-footer li a::after,.site-navigation li a::after{
+}*/
+.site-navigation li a::after{
     content: "";
     width: 0px;
     border-radius: 2px;
@@ -609,10 +613,8 @@ img.img-responsive.portfolio-thumb {
 .site-navigation li a::after{
     background: #000;
 }
-.navigation-footer li a::after{
-    background: #fff;;
-}
-.navigation-footer li a:hover::after,.site-navigation li a:hover::after{
+
+.site-navigation li a:hover::after{
     width: 100%;
 }
 .tc-orange{
@@ -637,9 +639,10 @@ blockquote > strong{
 .tight-width-whitespace .col-sm-6{
     margin-bottom: 44px;
 }
-@media (max-width:767.99px){
-    #bloc-8 .navbar-toggle{
-        margin-right: 50px;
-    }
+#bloc-8 .navbar{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 30px;
+    padding: 20px 0 20px 0;
 }
 
