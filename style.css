@@ -635,9 +635,7 @@ address ~ p{
 label{
     font-weight: 600;
 }
-blockquote > strong{
-    font-style: italic;
-}
+
 blockquote small{
     color: #000;
 }
@@ -651,8 +649,7 @@ blockquote small{
     padding: 20px 0 20px 0;
 }
 .lien-partenaire{
-    color:#32A3D4;
-    font-weight: 600;
+    color:#D4F005!important;
 }
 .citation{
     font-weight: 600;
