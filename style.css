@@ -381,7 +381,8 @@ img.img-responsive.portfolio-thumb {
     color: #F8F8FF!important;
 }
 .btn-atomic-tangerine {
-    background: #F3976C;
+    /*background: #F3976C;*/
+    background: #52240F;
     color: #FFFFFF!important;
 }
 .btn-atomic-tangerine:hover {
@@ -637,6 +638,9 @@ label{
 blockquote > strong{
     font-style: italic;
 }
+blockquote small{
+    color: #000;
+}
 .tight-width-whitespace .col-sm-6{
     margin-bottom: 44px;
 }
@@ -646,7 +650,11 @@ blockquote > strong{
     margin-top: 30px;
     padding: 20px 0 20px 0;
 }
-.partenaires{
-    color:#A5A5A5;
+.lien-partenaire{
+    color:#32A3D4;
+    font-weight: 600;
+}
+.citation{
+    font-weight: 600;
 }
 
