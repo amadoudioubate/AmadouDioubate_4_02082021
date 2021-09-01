@@ -1,3 +1,6 @@
+/*--------------------------------------------*/
+/*               STYLE GENERAL                */
+/*--------------------------------------------*/
 body {
     margin: 0;
     padding: 0;
@@ -26,8 +29,8 @@ a:hover {
     position: relative;
 }
 .bloc .container {
-    padding-left: 20px; /* c'etait à 0 ,j'ai mis à 20px */
-    padding-right: 20px; /* c'etait à 0 ,j'ai mis à 20px */
+    padding-left: 20px;
+    padding-right: 20px; 
 }
 .bloc-lg {
     padding: 100px 50px;
@@ -61,8 +64,6 @@ a:hover {
 }
 /* à supprimer dans l'ensemble*/
 .texture-paper::before {
-    /* supprimer url texture-paper */
-    /*background: url("img/texture-paper.png");*/
     background-size: 280px 280px;
 }
 .b-parallax {
@@ -132,19 +133,20 @@ a:hover {
 #bloc-1-hero h1 {
     font-size: 32px;
 }
-/* Entête navigation */
+/*======================================*/
+/*              EN TETE                 */
+/*======================================*/ 
 .navbar {
     margin-bottom: 0;
     z-index: 1;
 }
 .navbar-brand {
     height: auto;
-    padding: 0px 15px; /* 3px changé en 0 px */
-    font-size: 25px; /* font-size 25 px remplacé par 20px*/
+    padding: 0px 15px;
+    font-size: 25px; 
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
-    /* Ajout flex */
     display: flex;
     align-items: center;
 }
@@ -174,7 +176,7 @@ a:hover {
 }
 .navbar-toggle {
     margin: 8px 10px 0 0;
-    padding: 8px 10px; /* padding ajouté */
+    padding: 8px 10px; 
     border: 0px;
 }
 .navbar-toggle:hover {
@@ -193,6 +195,10 @@ a:hover {
         -webkit-transform: translateY(-50%);
     }
 }
+/*======================================*/
+/*            FIN EN TETE               */
+/*======================================*/ 
+
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -233,6 +239,9 @@ button {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
+/*====================================*/
+/*           SCROLLTOTOP              */
+/*====================================*/
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -250,6 +259,9 @@ button {
     font-size: 14px;
     opacity: 1;
 }
+/*====================================*/
+/*        FIN SCROLLTOTOP             */
+/*====================================*/
 a[data-lightbox] {
     position: relative;
     display: block;
@@ -405,10 +417,7 @@ img.img-responsive.portfolio-thumb {
     color: #364577!important;
     border-color: #364577!important;
 }
-/*
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}*/
+
 @media (min-width:768px){
     .bg-banniere{
         background-image: url("img/chouette-agence-banniere.jpg");
@@ -419,6 +428,12 @@ img.img-responsive.portfolio-thumb {
     #bloc-8 .navbar{
         border-top: 0px!important;
         border-bottom: 0px!important;
+    }
+    .col-sm-4 {
+        width: 33.33333333%;
+    }
+    .navbar-brand > h1{
+        font-size: 30px;
     }
 
 }
@@ -548,6 +563,9 @@ img.img-responsive.portfolio-thumb {
     form {
         padding: 5px;
     }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
 }
 @media (max-width: 400px) {
     .bloc {
@@ -555,16 +573,16 @@ img.img-responsive.portfolio-thumb {
         padding-right: 0;
     }
 }
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
-}
-@media (min-width: 768px){
+}*/
+/*@media (min-width: 768px){
     .col-sm-4 {
         width: 33.33333333%;
     }
-}
+}*/
 /* logo la chouette agence */
 .navbar-brand > h1{
     font-size: 25px;
@@ -574,35 +592,15 @@ img.img-responsive.portfolio-thumb {
     padding-right: 0!important;
     transition: all .200ms ease-out;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .navbar-brand > h1{
         font-size: 30px;
     }
-}
+}*/
 .navbar-brand > h1:hover{
     font-weight: 700;
 }
-/*.partner{
-    max-width: 100%;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-.navigation-footer{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0;
-}
-.navigation-footer > li{
-    margin-right: 10px;
-}
-.navigation-footer li a{
-    font-size: 18px;
-    font-weight: 500;
-    color: #341E1E!important;
-}*/
+
 .site-navigation li a::after{
     content: "";
     width: 0px;
