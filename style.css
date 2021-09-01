@@ -446,7 +446,8 @@ img.img-responsive.portfolio-thumb {
 }
 .bg-presentation {
     /*background-image: none;*/
-    background-color:#0fb684;
+    /*background-color:#0fb684;*/
+    background-color: #0B8417;
 }
 @media (max-width: 1024px) {
     .bloc {
@@ -634,7 +635,7 @@ label{
     font-weight: 600;
 }
 
-blockquote small{
+blockquote small,.citation{
     color: #000;
 }
 .tight-width-whitespace .col-sm-6{
