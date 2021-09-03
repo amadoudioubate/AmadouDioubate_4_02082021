@@ -1,15 +1,20 @@
 <!doctype html>
+<!-- Default remplacé par fr -->
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
+		<!-- Ajout du contenu à la balise title -->
 		<title>Contactez-nous - Entreprise web design Lyon</title>
+		<!-- Indexation -->
 		<meta name="robots" content="index, follow">
 		<meta name="googlebot" content="index, follow">
-		<meta name="description" content="Vous avez un projet de web design ? nous sommes à votre écoute ! 
-		contactez-nous pour parler à notre agence web design.">
+		<!-- Ajout du contenu à meta description -->
+		<meta name="description" content="Vous avez un projet de web design ? nous sommes à votre écoute ! contactez-nous pour parler à notre agence web design.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Conversion de favicon.jpg en png -->
 		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<!-- Les fichiers css minifiés -->
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
@@ -24,16 +29,19 @@
 		<!-- Conteneur principal -->
 		<div class="page-container">
 			
-			<!-- En-tête de la page - header -->
+			<!-- En-tête de la page - header remplace div -->
 			<header class="bloc bgc-white l-bloc " id="bloc-0">
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header">
+							<!-- L'attibrut title ajouté au lien -->
 							<a class="navbar-brand" href="index.html" title="La page d'acceuil">
+								<!-- L'image redimensionnée, l'attribut alt renseigné de façon pertinente et ajout de width="30"-->
 								<img src="img/logo-chouette-agence.png" alt="Le logo de la chouette agence" height="40" width="30" class="d-inline-block align-top" />
+								<!-- Ajout H1 -->
 								<h1>la chouette agence</h1>
 							</a>
-							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" aria-label="Menu navigation">
 								<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
 						</div>
@@ -43,10 +51,12 @@
 									<a href="index.html">Accueil</a>
 								</li>
 								<li>
-									<a href="index.html#bloc-4-portfolio">Nos réalisations</a>
+									<!-- Ajout du lien ancre le bloc services -->
+									<a href="index.html#bloc-2-services">Nos métiers</a>
 								</li>
 								<li>
-									<a href="contact-chouette-agence.html">Contact</a>
+									<!-- Ajout du lien ancre le bloc portfolio -->
+									<a href="index.html#bloc-4-portfolio">Nos réalisations</a>
 								</li>
 							</ul>
 						</div>
@@ -97,6 +107,7 @@
 										<!-- Ajout for dans label-->
 										<label for="input_504">Comment nous avez-vous connus ?</label>
 										<!--<input class="form-control" type="email" required id="input_504" />-->
+										<!-- select remplace input id="input_504" -->
 										<select class="form-control" id="input_504" aria-labelledby="input_504">
 											<option selected>Bouche à oreille</option>
 											<option value="1">Réseaux sociaux</option>
@@ -115,9 +126,11 @@
 									</button>
 								</form>
 							</div>
+							<!-- aside remplace div -->
 							<aside class="col-sm-6 text-center">
+								<!-- Ajout d'un titre h2 -->
 								<h2 class="tc-orange text-uppercase">La Choute Agence</h2>
-								<!--Remplacement de p par adresse-->
+								<!-- address remplace p -->
 								<address>
 									<strong>Adresse</strong><br>
 									2 place Sathonay<br>69001 Lyon
@@ -155,21 +168,25 @@
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- Ajout des attributs target="_blank" et title -->
 										<a class="social" href="https://twitter.com/home?lang=fr" target="_blank" rel="noreferrer noopener" title="Partager via twitter"><span class="fa fa-twitter icon-md"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- Ajout des attributs target="_blank" et title -->
 										<a class="social" href="https://www.facebook.com/Lachouetteagence-102124138847114" target="_blank" rel="noreferrer noopener" title="Partager via facebook"><span class="fa fa-facebook icon-md"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- Ajout des attributs target="_blank" et title -->
 										<a class="social" href="https://dribbble.com/tags/fa" target="_blank" rel="noreferrer noopener" title="Partager via dribbble"><span class="fa fa-dribbble icon-md"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
+										<!-- Ajout des attributs target="_blank" et title -->
 										<a class="social" href="https://www.instagram.com/?hl=fr" target="_blank" rel="noreferrer noopener" title="Partager via instagram"><span class="fa fa-instagram icon-md"></span></a>
 									</div>
 								</div>
@@ -180,12 +197,13 @@
 							<nav class="navbar row">
 								<div class="navbar-header">
 									<span class="navbar-brand">Nos Partenaires</span>
-									<button type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-2" aria-label="Toggle navigation">
+									<button type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-2" aria-label="Menu navigation">
 										<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 									</button>
 								</div>
 								<div class="collapse navbar-collapse navbar-2 special-dropdown-nav" >
 								  <ul class="site-navigation nav navbar-nav">
+									<!-- Les liens externes ont l'attribut target="_blank", rel="noreferrer noopener" et title -->
 									<li><a class="lien-partenaire" href="https://www.lyon.fr/" target="_blank" rel="noreferrer noopener">Mairie de Lyon</a></li>
 									<li><a class="lien-partenaire" href="https://www.toybox-design.com/" target="_blank" rel="noreferrer noopener" title="ToyBoy est une agence webdesign">ToyBoy</a></li>
 									<li><a class="lien-partenaire" href="https://www.matiere-1ere.fr/" target="blank" rel="noreferrer noopener" title="Matière première est une agence web et print">Matière-1ere</a></li>
@@ -201,7 +219,7 @@
 		</div>
 		<!-- Conteneur principal FIN -->
 		
-		<!-- scripts js -->
+		<!-- Les scripts minifiés à la fin avec l'ajout de l'attribut defer -->
 		<script defer src="./js/jquery-2.1.0.min.js"></script>
 		<script defer src="./js/bootstrap.min.js"></script>
 		<script defer src="./js/blocs.min.js"></script>
