@@ -149,6 +149,7 @@ a:hover {
     line-height: 44px;
     display: flex;
     align-items: center;
+    margin-top: 3px;
 }
 .navbar-brand img {
     max-height: 200px;
@@ -383,17 +384,13 @@ img.img-responsive.portfolio-thumb {
     background-color: #FFFFFF;
 }
 .bgc-atomic-tangerine {
-    /*background-color: #F3976C;*/
-    /*background-color: #c27956;*/
+    
     background-color: #52240F;
 }
 .tc-white {
-    /*color: #F3976C!important;*/
-    /*color: #FFF!important;*/
     color: #F8F8FF!important;
 }
 .btn-atomic-tangerine {
-    /*background: #F3976C;*/
     background: #52240F;
     color: #FFFFFF!important;
 }
@@ -441,12 +438,9 @@ img.img-responsive.portfolio-thumb {
     background-image: url("img/lines-h2-bg.png");
 }
 .bg-banniere {
-    /*background-image: none;*/
     background-color:#333;
 }
 .bg-presentation {
-    /*background-image: none;*/
-    /*background-color:#0fb684;*/
     background-color: #0B8417;
 }
 @media (max-width: 1024px) {
@@ -470,13 +464,15 @@ img.img-responsive.portfolio-thumb {
         max-width: 100%
     }
 }
-/* min-device-width et max-device-width sont supprimés */
+/* min-device-width et max-device-width sont supprimés et 
+   remplacés respectivement par min-width et max-width  */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
-/* min-device-width et max-device-width sont supprimés */
+/* min-device-width et max-device-width sont supprimés et 
+   remplacés respectivement par min-width et max-width  */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
@@ -574,16 +570,6 @@ img.img-responsive.portfolio-thumb {
         padding-right: 0;
     }
 }
-/*@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
-    }
-}*/
-/*@media (min-width: 768px){
-    .col-sm-4 {
-        width: 33.33333333%;
-    }
-}*/
 /* logo la chouette agence */
 .navbar-brand > h1{
     font-size: 25px;
@@ -596,7 +582,6 @@ img.img-responsive.portfolio-thumb {
 .navbar-brand > h1:hover{
     font-weight: 700;
 }
-
 .site-navigation li a::after{
     content: "";
     width: 0px;
@@ -628,7 +613,6 @@ address ~ p{
 label{
     font-weight: 600;
 }
-
 blockquote small,.citation{
     color: #000;
 }
