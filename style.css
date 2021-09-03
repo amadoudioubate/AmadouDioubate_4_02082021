@@ -289,7 +289,7 @@ a[data-lightbox]:hover img {
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
-h1,h2,h3,h4,h5,h6,p,label,.btn,a {
+h1,h2,h3,h4,h5,h6,p,label,.btn,a,address {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -588,16 +588,11 @@ img.img-responsive.portfolio-thumb {
 .navbar-brand > h1{
     font-size: 25px;
     margin: 0;
-    font-family: 'Podkova', serif;
+    /*font-family: 'Podkova', serif;*/
     padding-left: 0!important;
     padding-right: 0!important;
     transition: all .200ms ease-out;
 }
-/*@media (min-width: 768px) {
-    .navbar-brand > h1{
-        font-size: 30px;
-    }
-}*/
 .navbar-brand > h1:hover{
     font-weight: 700;
 }
@@ -624,7 +619,6 @@ img.img-responsive.portfolio-thumb {
 }
 address{
     font-size: 16px;
-    color: unset!important;
 }
 address ~ p{
     font-size: 16px!important;
@@ -654,5 +648,5 @@ blockquote small,.citation{
     font-weight: 600;
 }
 .la-chouette{
-    color: #1B22F3;
+    color: #1B22F3!important;
 }
