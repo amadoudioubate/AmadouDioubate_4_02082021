@@ -653,4 +653,6 @@ blockquote small,.citation{
 .citation{
     font-weight: 600;
 }
-
+.la-chouette{
+    color: #1B22F3;
+}
