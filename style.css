@@ -276,6 +276,7 @@ a:hover {
     left: 15px;
     right: 15px;
     bottom: 5px;
+    text-align: center;
 }
 .close-lightbox:hover, .next-lightbox:hover, .prev-lightbox:hover {
     opacity: 1.0;
@@ -717,6 +718,12 @@ blockquote small,.citation{
 }
 .la-chouette{
     color: #1B22F3!important;
+}
+blockquote{
+    border-left: 0!important;
+}
+blockquote .small:before, blockquote footer:before, blockquote small:before {
+    content: ''!important;
 }
 
 
