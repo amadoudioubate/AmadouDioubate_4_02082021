@@ -199,6 +199,89 @@ a:hover {
 /*======================================*/
 /*            FIN EN TETE               */
 /*======================================*/ 
+/* modal */
+
+#lightbox-modal {
+    display: flex;
+    align-items: center;
+}
+#lightbox-modal .modal-dialog {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 0;
+}
+@media (max-width: 767px){
+    .close-lightbox {
+        display: inline-block;
+    }
+}
+.close-lightbox {
+    color: #FFF;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    line-height: 30px;
+    padding: 0 9px 5px;
+    opacity: 0.3;
+}
+.snapshot-lb .modal-body {
+    padding-bottom: 45px;
+}
+.prev-lightbox {
+    padding: 6px 13px 1px 10px;
+    left: 25px;
+}
+.next-lightbox, .prev-lightbox {
+    font-size: 20px;
+    color: rgba(255, 255, 255, .9);
+    background: rgba(0, 0, 0, .5);
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    opacity: 0.4;
+}
+.next-lightbox {
+    padding: 6px 8px 1px 13px;
+    right: 25px;
+}
+.next-lightbox, .prev-lightbox {
+    font-size: 20px;
+    color: rgba(255, 255, 255, .9);
+    background: rgba(0, 0, 0, .5);
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    opacity: 0.4;
+}
+#lightbox-modal .modal-dialog img {
+    max-height: 90vh;
+    margin: 0 auto;
+}
+.snapshot-lb .lightbox-caption {
+    padding: 0;
+    color: rgba(0, 0, 0, .5);
+    background: none;
+}
+.lightbox-caption {
+    padding: 20px;
+    color: #FFF;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 5px;
+}
+.close-lightbox:hover, .next-lightbox:hover, .prev-lightbox:hover {
+    opacity: 1.0;
+    color: #FFF;
+}
+
 
 .mg-md {
     margin-top: 10px;
@@ -355,6 +438,9 @@ h4 {
 .white {
     color: #FFFFFF!important;
 }
+.black{
+    color: #000!important;
+}
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -385,14 +471,14 @@ img.img-responsive.portfolio-thumb {
 }
 .bgc-atomic-tangerine {
     
-    background-color: #52240F;
+    background-color: #F3976C;
 }
 .tc-white {
     color: #F8F8FF!important;
 }
 .btn-atomic-tangerine {
-    background: #52240F;
-    color: #FFFFFF!important;
+    background: #F3976C;
+    color: #000!important;
 }
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
@@ -625,12 +711,12 @@ blockquote small,.citation{
     margin-top: 30px;
     padding: 20px 0 20px 0;
 }
-.lien-partenaire{
-    color:#D4F005!important;
-}
+
 .citation{
     font-weight: 600;
 }
 .la-chouette{
     color: #1B22F3!important;
 }
+
+

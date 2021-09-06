@@ -80,9 +80,9 @@
 								<h2 class="text-center hero-bloc-text tc-white ">
 									La chouette agence est une agence de web design basée à Lyon
 								</h2>
-								<!--<div class="text-center">
+								<div class="text-center">
 									<a href="contact-chouette-agence.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contactez-nous</a>
-								</div>-->
+								</div>
 							</div>
 						</div>
 					</div>
@@ -259,15 +259,17 @@
 			<!-- Contenu principal FIN -->
 
 			<!-- Bouton defilement vers le haut - ScrollToTop Button -->
-			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')">
+				<span class="fa fa-chevron-up"></span>
+			</a>
 			<!-- Bouton defilement vers le haut FIN - ScrollToTop Button -->
-
+			
 			<!-- Pied de page - footer remplace div --> 
 			<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 				<div class="container bloc-sm">
 					<div class="row">
 						<div class="col-sm-12">
-							<p class="text-center white">
+							<p class="text-center black">
 								La chouette agence - Agence web basée à Lyon.<br>
 							</p>
 							<!-- Liens vers les reseaux sociaux -->
@@ -298,25 +300,6 @@
 								</div>
 							</div>
 							<!-- Liens vers les reseaux sociaux FIN -->
-
-							<!-- Nos partenaires - suppresion de tous les liens partenaires d'origine et ajout des nouveaux partenaires -->
-							<nav class="navbar row">
-								<div class="navbar-header">
-									<span class="navbar-brand text-uppercase">Nos Partenaires</span>
-									<button type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-2" aria-label="Menu navigation">
-										<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-									</button>
-								</div>
-								<div class="collapse navbar-collapse navbar-2 special-dropdown-nav" >
-								  <ul class="site-navigation nav navbar-nav">
-									<!-- Les liens externes ont l'attribut target="_blank", rel="noreferrer noopener" et title -->
-									<li><a class="lien-partenaire" href="https://www.lyon.fr/" target="_blank" rel="noreferrer noopener">Mairie de Lyon</a></li>
-									<li><a class="lien-partenaire" href="https://www.toybox-design.com/" target="_blank" rel="noreferrer noopener" title="ToyBoy est une agence webdesign">ToyBoy</a></li>
-									<li><a class="lien-partenaire" href="https://www.matiere-1ere.fr/" target="blank" rel="noreferrer noopener" title="Matière première est une agence web et print">Matière-1ere</a></li>
-								  </ul>
-								</div>
-							</nav>
-							<!-- Nos partenaires FIN -->
 						</div>
 					</div>
 				</div>
@@ -327,10 +310,10 @@
 		<!-- Conteneur principal FIN -->
 		
 		<!-- Les scripts minifiés à la fin avec l'ajout de l'attribut defer -->
-		<script defer src="./js/jquery-2.1.0.min.js"></script>
-		<script defer src="./js/bootstrap.min.js"></script>
-		<script defer src="./js/blocs.min.js"></script>
-		<script defer src="./js/jquery.touchSwipe.min.js"></script>
-		<script defer src="./js/gmaps.min.js"></script>	
+		<script src="./js/jquery-2.1.0.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/blocs.min.js"></script>
+		<script src="./js/jquery.touchSwipe.min.js"></script>
+		<script src="./js/gmaps.min.js"></script>	
 	</body>
 </html>
